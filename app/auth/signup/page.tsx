@@ -21,8 +21,8 @@ export default function SignupPage() {
 
     setLoading(true)
     const { error } = await supabase.auth.signUp({
-  email, password,
-  options: { 
+		email, password,
+	options: { 
     emailRedirectTo: 'https://fbrweb.vercel.app/auth/confirm'
   }
 })
